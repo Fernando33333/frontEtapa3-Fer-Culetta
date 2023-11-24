@@ -1,0 +1,34 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    background-color: #bc3908;
+    color: #f6aa1c;
+    margin-left: 25px;
+  }
+
+  &__nav-item {
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+    position: relative;
+  }
+
+  &__nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f6aa1c;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__nav-item:hover::after {
+    transform: scaleX(1);
+  }
+}

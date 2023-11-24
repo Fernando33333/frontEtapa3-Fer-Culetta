@@ -1,0 +1,246 @@
+/* ------------------------------------- */
+/* HEADER                                */
+/* ------------------------------------- */
+
+/* .main-header {
+    display: flex;
+    flex-direction: column;
+  
+    @media (max-width: 768px) {
+      & {
+        flex-direction: column-reverse;
+      }
+    }
+  
+  
+  }
+  
+  #menu {
+    display: none;
+  
+    &:checked + .nav-bar {
+      display: block;
+    }
+  
+    &:checked ~ .search-bar .menu-toogle__label {
+      background-color: yellow;
+    }
+  
+  } */
+
+/* ------------------------------------- */
+/* NAVBAR                                */
+/* ------------------------------------- */
+
+/*   .nav-bar {
+    background-color: mediumaquamarine;
+  
+    &__nav-list {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+  
+      @media (max-width: 768px) {
+        & {
+          flex-direction: column;
+        }
+      }
+    }
+  
+    &__nav-item {
+      text-align: center;
+      background-color: pink;
+    }
+  
+    &__nav-link {
+      display: block;
+      background-color: purple;
+      color: #fff;
+      padding: 1em 2em;
+      text-decoration: none;
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
+  } */
+
+/* ------------------------------------- */
+/* SEARCH BAR                            */
+/* ------------------------------------- */
+
+/*   .search-bar {
+    background-color: olivedrab;
+    display: flex;
+    justify-content: space-between;
+  
+    &__logo-container,
+    &__form-container {
+      padding: 1em;
+    }
+  
+    &__logo-container {
+      background-color: yellow;
+    }
+  
+    &__form-container {
+      background-color: gold;
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  
+    &__form-label {
+      background-color: greenyellow;
+    }
+  
+    &__form-search {
+      background-color: deeppink;
+      width: 70%;
+    }
+  
+    &__form-submit {
+      background-color: darkslategray;
+      color: white;
+    }
+  
+    &__carrito-container {
+      flex: 0 0 3em; */ /* shorthand (grow shrink basis */
+/*       background-color: goldenrod;
+    }
+  } */
+
+/* ------------------------------------- */
+/* MENU TOOGLE                           */
+/* ------------------------------------- */
+
+/*   .menu-toggle {
+    display: none;
+    background-color: red;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+  
+    &__label {
+      display: block;
+      background-color: black;
+      height: 100%;
+    }
+  
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+      display: block;
+      background-color: #333;
+      height: .2em;
+      position: absolute;
+      left: .5em;
+      right: .5em;
+    }
+  
+    &__top-bread {
+      top: .8em;
+    }
+  
+    &__meat {
+      top: 50%;
+      margin-top: -.1em;
+    }
+  
+    &__bottom-bread {
+      bottom: .8em;
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        display: block;
+      }
+    }
+  } */
+
+.main-header {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #bc3908;
+  align-items: center;
+}
+
+/* .nav-bar {
+  display: flex;
+  flex-direction: row;
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    background-color: #bc3908;
+    color: #f6aa1c;
+    margin-left: 25px;
+  }
+
+  &__nav-item {
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+    position: relative;
+  }
+
+  &__nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f6aa1c;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__nav-item:hover::after {
+    transform: scaleX(1);
+  }
+} */
+
+.search-bar {
+  background-color: #bc3908;
+  display: flex;
+  flex-direction: column;
+  &__logo-container {
+    padding: 1em;
+    width: 300px;
+    height: 150px;
+    background-image: url(/public/img/brucelleNaranja.png);
+    background-repeat: no-repeat;
+  }
+
+  &__form-container {
+    padding: 1em;
+    background-color: #bc3908;
+  }
+
+  &__carrito-container {
+    background-color: #bc3908;
+    // background-image: url(/public/img/shopping-cart.png);
+    background-size: 80px 80px;
+  }
+
+  &__form-label {
+    background-color: #bc3908;
+  }
+
+  &__form-search {
+    width: 80%;
+    background-color: #f6aa1c;
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  &__form-submit {
+    border-style: none;
+    border-radius: 5px;
+    border: solid #f6aa1c;
+    background-color: #bc3908;
+    color: #f6aa1c;
+  }
+}

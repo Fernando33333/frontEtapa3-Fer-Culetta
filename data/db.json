@@ -1,0 +1,115 @@
+{
+  "productos": [
+    {
+      "nombre": "Camaro '72",
+      "foto": "img/camaro72.jpg",
+      "detalles": "Clásico americano del año 1972 en excelente estado de conservación, con todos sus accesorios originales",
+      "precio": 180000,
+      "stock": 1,
+      "marca": "Chevrolet",
+      "categoria": "autos",
+      "id": 1,
+      "envio": false
+    },
+    {
+      "nombre": "Chevette SS",
+      "foto": "img/chevetteSS.jpg",
+      "detalles": "Impecable Chevette SS con sus partes completamente originales, listo para salir a la calle. Cuenta con garantía frente a cualquier eventualidad",
+      "precio": 125000,
+      "stock": 1,
+      "marca": "Chevrolet",
+      "categoria": "autos",
+      "id": 2,
+      "envio": true
+    },
+    {
+      "nombre": "Ferrari descapotable",
+      "foto": "img/ferrariDescNueva.jpg",
+      "detalles": "Ferrari única en su especie, restaurada a nueva con la totalidad de sus elementos traídos del país de origen.  Consultar valor.",
+      "precio": 185000,
+      "stock": 1,
+      "marca": "Ferrari",
+      "categoria": "autos",
+      "id": 3,
+      "envio": true
+    },
+    {
+      "nombre": "Ferrari Lino",
+      "detalles": "Les traemos este vehículo de edición limitada, cual se han generado solamente tres unidades. Solo una se encuentra en nuestro suelo y está en perfectas condiciones.",
+      "foto": "img/ferrariLino.jpg",
+      "precio": 195000,
+      "stock": 3,
+      "marca": "Ferrari",
+      "categoria": "autos",
+      "id": 4,
+      "envio": true
+    },
+    {
+      "nombre": "Ford Mustang",
+      "detalles": "Los músculo americano, estan perfectamente representados por el gran Ford Mustang, una máquina de pura potencia que te ofrecemos en nuestro amplio stock de clásicos.",
+      "foto": "img/FordMustang.jpg",
+      "precio": 120000,
+      "stock": 4,
+      "marca": "Ford",
+      "categoria": "autos",
+      "id": 5,
+      "envio": true
+    },
+    {
+      "id": 6,
+      "nombre": "General Motors",
+      "precio": 80000,
+      "stock": 5,
+      "marca": "GM",
+      "categoria": "autos",
+      "detalles": "Entre los primeros ejemplares en la época moderna de la reconocida compañia americana, te traemos este modelo de gran potencia con un práctico diseño de interior y exterior.",
+      "foto": "img/generalMotorsNegro.jpg",
+      "envio": true
+    },
+    {
+      "id": 7,
+      "nombre": "General Motors Negro",
+      "precio": 88000,
+      "stock": 2,
+      "marca": "GM",
+      "categoria": "autos",
+      "detalles": "Entre los primeros ejemplares de la reconocida compañia americana, te traemos este modelo de gran potencia con un práctico diseño de interior y exterior, en tono oscuro.",
+      "foto": "img/generalMotorsNegro.jpg",
+      "envio": false
+    },
+    {
+      "id": 8,
+      "nombre": "Mercedes Benz",
+      "precio": 95000,
+      "stock": 2,
+      "marca": "Mercedes Benz",
+      "categoria": "autos",
+      "detalles": "Te acercamos este reconocido modelo de la empresa alemana. Un ejemplar clase E, con toda la genialidad de la ingeniería moderna, plasmado en un auto de mas de 40 años.",
+      "foto": "img/MercedesBenz.jpg",
+      "envio": true
+    },
+    {
+      "id": 9,
+      "nombre": "Nissan deportivo",
+      "precio": 75000,
+      "stock": 2,
+      "marca": "Nissan",
+      "categoria": "autos",
+      "detalles": "En este apartado, podemos ver un deportivo de diseño agresivo y gran aerodinamia plasmado de excelente manera por la compañia nipona.",
+      "foto": "img/nissanDeportivo.jpg",
+      "envio": true
+    },
+    {
+      "id": 10,
+      "nombre": "Porsche 911",
+      "precio": 105000,
+      "stock": 3,
+      "marca": "Porsche",
+      "categoria": "autos",
+      "detalles": "Nuevamente la ingeniería alemana y el agresivo diseño de este Porsche, nos remonta a un clásico de la compañia nacida en Stuttgart. Ideal para que disfrutes en las rutas.",
+      "foto": "img/shelbyCobra.jpg",
+      "envio": false
+    }
+  ],
+  "carrito": []
+}

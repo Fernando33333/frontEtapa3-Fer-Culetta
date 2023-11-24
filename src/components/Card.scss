@@ -1,0 +1,151 @@
+/* .card {
+    outline: none;  */ /* Como el borde pero no ocupa espacio en la caja */
+/*     width: 220px;
+    max-width: 300px;
+    height: 400px;
+    overflow: hidden; */ /* Si el contenido ocupa más espacio que el tamaño del contenedor. Queda oculto */
+/*     border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: orange;
+    box-shadow: 0 1px 5px rgba(0,0,0, .2), 0 0 3px rgba(0,0,0, .3);
+  
+    transition: all .2s;
+  
+    &:hover,
+    &:focus {
+      transform: scale(1.03) skewX(0);
+      transform-origin: bottom;
+      box-shadow: 0 7px 8px rgba(0,0,0, .05), 0 3px 3px rgba(0,0,0, .01);
+    }
+  
+    &:nth-child(5n + 1) {
+      background-image: linear-gradient(to top, #aaafad 0%, #60efff 30%);
+    }
+  
+    &:nth-child(5n + 2) {
+      background-image: linear-gradient(to top, #696eff 0%, #f8accf 30%);
+    }
+  
+    &:nth-child(5n + 3) {
+      background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 30%);
+    }
+  
+    &:nth-child(5n + 4) {
+      background-image: linear-gradient(to top, #ff930f 0%, #fff95b 30%);
+    }
+  
+    &:nth-child(5n + 5) {
+      background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 30%);
+    }
+  
+    &__image-container {
+      height: 200px;
+      background-color: blue;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+    }
+  
+    &:hover &__image-container,
+    &:focus &__image-container {
+      clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
+    }
+  
+    &__image {
+      width: 100%;
+      height: 100%; */ /* 200px */
+/*       object-fit: cover;
+      transition: .2s;
+    }
+  
+    &:hover &__image,
+    &:focus &__image {
+      transform: scale(1.4) rotate(5deg);
+      transform-origin: center;
+    }
+  
+    &__content {
+      padding: 1em;
+    }
+  
+    @media (min-width: 1024px) {
+      & { */ /* .card */
+/*         min-width: 240px;
+      }
+    }
+  
+    @media (min-width: 426px) and (max-width: 768px) {
+      & {
+        min-width: 400px;
+        max-width: 500px;
+        height: 200px;
+      }
+  
+      &__article { */ /* .card__article */
+/*         display: flex;
+      }
+  
+      & &__image-container {
+        width: 40%;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+      }
+      
+      &:hover &__image-container,  */ /* .card:hover .card__image-container */
+/*       &:focus &__image-container {
+        width: 40%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+  } */
+
+.card {
+  &__image-container {
+    overflow: hidden;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    max-height: 10em;
+    position: relative;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  &__image:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    filter: brightness(100%);
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6aa1c;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  &__content {
+    /*     background-color: blueviolet;
+      max-height: 10em;
+      text-align: center;
+      padding: 1em; */
+    margin: 1em;
+    background-color: #bc3908;
+    text-align: center;
+    color: #f6aa1c;
+    min-height: 7em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  @media (max-width: 1200px) {
+    &__content {
+      font-size: 0.6em;
+    }
+  }
+}
